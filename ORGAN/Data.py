@@ -1,8 +1,7 @@
 import torch
 import pandas as pd
 
-Data = pd.read_csv('C:/Users/haroon_03/Desktop/smiles.csv')
-device = 'cpu'
+Data = pd.read_csv('./smiles.csv')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 chars = set()
