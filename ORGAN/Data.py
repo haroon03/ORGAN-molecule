@@ -1,7 +1,7 @@
 import torch
 import pandas as pd
 
-Data = pd.read_csv('./data/smiles.csv')
+Data = pd.read_csv('./data/dataset_iso_v1.csv')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 chars = set()
